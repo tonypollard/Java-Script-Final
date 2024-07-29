@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gen Z Flix Videos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./assets/favicon-16x16.png">
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          privateKey: "23cxAfgiVe6Ftm64061b5",
+          publicKey: "RmCMNC1RBQFSTKfu_",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    
+    <section id="landing__page">
+        <div class="landing__page--wrapper">
+            <div class="nav__container">
+              <nav class="nav__bar--lp">
+                <figure class="logo__wrapper">
+                  <img class="personal-logo" src="./assets/logo gen z flix.png" alt="" />
+                </figure>
+                <ul class="nav__link--list">
+                  <li class="nav__link">
+                    <a
+                      href="https://www.imdb.com/" target="_blank"
+                      class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                      >About</a
+                    >
+                  </li>
+                  <li class="nav__link">
+                    <a
+                      href="https://www.imdb.com/" target="_blank"
+                      class="nav__link--anchor link__hover-effect link__hover-effect--black"
+                      >Videos</a
+                    >
+                  </li>
+                  <li class="nav__link">
+                    <a href=mailto:agpollard7@gmail.com id="contact__submit" class="form__submit email__button" >CONTACT</a>
+                  </li>
+                </ul>
+                
+              </nav>
+              <figure>
+               <i class="fas fa-bars"></i> 
+              </figure>
+            </div>
+            <div class=" container browse__section">
+                <div class="section__title">
+                    <h3>Browse Our Movies!</h3>
+                </div>
+                  <div class=search__field>
+                  <input id="movieTitle" placeholder="Search here.  Make popcorn!" > 
+                  <button id="searchButton" class="searching" onclick="searching(event)"
+
+                  
+
+                  ><span class="fas fa-search click__search orange"></span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="background">
+        <div class="background__wrapper"></div>
+        <img src="./assets/movie poster bg 2.png" class="bg__poster" alt="" />
+    </section>
+    
+    <section id="search__results">
+        <div class="search__container container">
+          <div class="row video__row">
+            <div class="search__results">
+              <div class="search__results--title">
+              <h4 >Search results for Movie</h>
+            </div>
+            <div>
+              <form action="/action_page.php">
+                <label for="videos">Search by:</label>
+                
+                <select name="movie" id="movie">
+                  <option value="title">title</option>
+                </select>
+                <br><br>
+              </form>
+            </div>  
+            </div>
+          <div class="movie__data">
+            <ul id="movieDataContainer" class="video__list">
+            </ul>
+          </div>
+          <div class="modal__overlay--loading">
+          
+
+              <h3 class="modal__overlay--title">Sit Tight...Movies Loading!</h3>
+            
+            <i class="fas fa-spinner"></i>
+          </div>
+          
+          </div>
+          
+        </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row footer__row">
+          <figure class="footer__logo">
+            <img
+              class="footer__logo--img"
+              src="./assets/logo gen z flix.png"
+              alt=""
+            />
+          </figure>
+          <div class="footer__copyright">Copyright © 2024</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
