@@ -6,47 +6,53 @@ const randomVideos = [
         plot: "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth ...",
         director: "George Lucas",
         actors: "Mark Hamill, Harrison Ford, Carrie Fisher",
-        poster: "https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_SX300.jpg"
+        poster: "https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_SX300.jpg",
+        imdbID: "tt0076759"
     },
     {
-        title: "Placeholder Movie 2",
-        year: "2023",
-        plot: "This is a placeholder plot for movie 2.",
-        director: "Director 2",
-        actors: "Actor 3, Actor 4",
-        poster: "https://m.media-amazon.com/images/M/MV5BZDhlZmRlNmMtYmMyYy00Zjg0LWI0ZmQtYzNiNWM5YTU4YTI3XkEyXkFqcGdeQXVyNjQ0NjY3MDY@._V1_SX300.jpg"
+        title: "B",
+        year: "2013",
+        plot: " Old party treasurer was transferred from prison to National Court to testify. Previously, he had denied everything. Today he will tell the truth.",
+        director: "David Ilundain",
+        actors: "Pedro Casablanc, Manolo Solo",
+        poster: "https://m.media-amazon.com/images/M/MV5BZDhlZmRlNmMtYmMyYy00Zjg0LWI0ZmQtYzNiNWM5YTU4YTI3XkEyXkFqcGdeQXVyNjQ0NjY3MDY@._V1_SX300.jpg",
+        imdbID: "tt4679438"
     },
     {
-        title: "Placeholder Movie 3",
-        year: "2023",
-        plot: "This is a placeholder plot for movie 3.",
-        director: "Director 3",
-        actors: "Actor 5, Actor 6",
-        poster: "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+        title: "Fight Club",
+        year: "1999",
+        plot: "An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.",
+        director: "David Fincher",
+        actors: "Brad Pitt, Edward Norton",
+        poster: "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+        imdbID: "tt0137523"
     },
     {
-        title: "Placeholder Movie 4",
-        year: "2023",
-        plot: "This is a placeholder plot for movie 4.",
-        director: "Director 4",
-        actors: "Actor 7, Actor 8",
-        poster: "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg"
+        title: "The Dark Knight",
+        year: "2008",
+        plot: "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman, gordon and harvey dent work to stop the menace.",
+        director: "Christopher Nolan",
+        actors: "Christian Bale, Heath Ledger",
+        poster: "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
+        imdbID: "tt0468569"
     },
     {
-        title: "Placeholder Movie 5",
-        year: "2023",
-        plot: "This is a placeholder plot for movie 5.",
-        director: "Director 5",
-        actors: "Actor 9, Actor 10",
-        poster: "https://m.media-amazon.com/images/M/MV5BOTA5NjhiOTAtZWM0ZC00MWNhLThiMzEtZDFkOTk2OTU1ZDJkXkEyXkFqcGdeQXVyMTA4NDI1NTQx._V1_SX300.jpg"
+        title: "Star Wars: Episode I - The Phantom Menace",
+        year: "1999",
+        plot: "Two Jedi escape a hostile blockade to find allies and come across a young boy who may bring balance to the Force, but the long dormant Sith resurface to claim their original glory.",
+        director: "George Lucas",
+        actors: "Ewan McGregor, Liam Neeson",
+        poster: "https://m.media-amazon.com/images/M/MV5BYTRhNjcwNWQtMGJmMi00NmQyLWE2YzItODVmMTdjNWI0ZDA2XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_FMjpg_UX1000_.jpg",
+        imdbID: "tt0120915"
     },
     {
-        title: "Placeholder Movie 6",
-        year: "2023",
-        plot: "This is a placeholder plot for movie 6.",
-        director: "Director 6",
-        actors: "Actor 11, Actor 12",
-        poster: "https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg"
+        title: "Game of Thrones",
+        year: "2011",
+        plot: "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+        director: "David Benioff",
+        actors: "Emilia Clarke, D.B. Weiss",
+        poster: "https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_.jpg",
+        imdbID: "tt0944947"
     }
 ];
 
@@ -68,9 +74,9 @@ function displayRandomVideos() {
                     <h4 class="video__description--sub-title">Director: ${video.director}</h4>
                     <p class="video__description--para">${video.plot}</p>
                     <div class="video__description--links">
-                        <a href="#" class="video__description--link">
-                            <i class="fas fa-link"></i> Placeholder Link
-                        </a>
+                        <a href="https://www.imdb.com/title/${video.imdbID}" class="video__description--link" target="_blank">
+                                        <i class="fas fa-link"></i> IMDb
+                                    </a>
                     </div>
                 </div>
             </div>
