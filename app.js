@@ -90,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const inputField = document.getElementById('movieTitle');
     const searchButton = document.getElementById('searchButton');
+    const sortDropdown = document.getElementById('sortDropdown');
 
     // Event listener for the search button click
     searchButton.addEventListener('click', handleSearch);
@@ -103,7 +104,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 
+    sortDropdown.addEventListener('change', function() {
+        const selectedOption = sortDropdown.value;
+        if (selectedOption === 'a-to-z') {
+            sortMoviesAlphabetically(true);
+        } else if (selectedOption === 'z-to-a') {
+            sortMoviesAlphabetically(false);
+        }
+    });
 });
+
 
 // this code adds the loading background
 
@@ -226,5 +236,39 @@ async function handleSearch() {
         console.error('Error fetching movie data:', error);
         movieDataContainer.innerHTML = '<li class="error-message">Error fetching movie data. Please try again later.</li>';
     }   
+    sortDropdown.value = 'default';
 }
 
+// async function onSortChange(event) {
+    
+ 
+
+// )
+//     console.log('this ran')
+//     movieLi.Title.sort(A, Z)
+
+
+
+// }
+
+function sortMoviesAlphabetically(ascending = true) {
+        const movieDataContainer = document.getElementById('movieDataContainer');
+        const movies = Array.from(movieDataContainer.children);
+    
+        movies.sort((a, b) => {
+            const titleA = a.querySelector('.video__description--title').textContent.toLowerCase();
+            const titleB = b.querySelector('.video__description--title').textContent.toLowerCase();
+            return ascending ? titleA.localeCompare(titleB) : titleB.localeCompare(titleA);
+        });
+
+    // Clear the container and append sorted movies
+    movieDataContainer.innerHTML = '';
+    movies.forEach(movie => movieDataContainer.appendChild(movie));
+
+    const sorting = document.querySelector(`.modal__overlay--loading`)
+        sorting.classList += " modal__overlay--visible"
+        setTimeout(() => {
+            sorting.classList.remove("modal__overlay--visible")
+            console.log("it worked 1")
+        }, 1500)
+}

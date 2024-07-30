@@ -88,10 +88,12 @@
             </div>
             <div>
               <form action="/action_page.php">
-                <label for="videos">Search by:</label>
+                <label for="videos">Sort Titles:</label>
                 
-                <select name="movie" id="movie">
-                  <option value="title">title</option>
+                <select name="sortDropdown" id="sortDropdown" onchange="sortMoviesAlphabetically(event)">
+                  <option value="default">-select-</option>
+                  <option value="a-to-z">A to Z</option>
+                  <option value="z-to-a">Z to A</option>
                 </select>
                 <br><br>
               </form>
