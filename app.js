@@ -270,5 +270,5 @@ function sortMoviesAlphabetically(ascending = true) {
         setTimeout(() => {
             sorting.classList.remove("modal__overlay--visible")
             console.log("it worked 1")
-        }, 1500)
+        }, 1000)
 }
